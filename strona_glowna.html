@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazyn</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .summary-item {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #dee2e6;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn-history {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Magazyn - Strona Główna</h1>
+        </div>
+    </header>
+    <main>
+        <a href="historia.html" class="btn btn-secondary btn-history">Historia</a>
+        <section id="summary">
+            <h2 class="mb-4">Podsumowanie</h2>
+            <div class="row">
+                <div class="col-md-6 summary-item">
+                    <h3>Aktualny stan magazynowy</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nazwa produktu</th>
+                                <th>Producent</th>
+                                <th>Ilość sztuk</th>
+                                <th>Ilość sprzedanych sztuk</th>
+                                <th>Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Razer Deathadder</td>
+                                <td>Razer</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>120.00 PLN</td>
+                            </tr>
+                            <!-- Tutaj możesz dodać więcej wierszy z danymi z listy magazyn -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 summary-item">
+                    <h3>Aktualne saldo</h3>
+                    <p>1000 PLN</p>
+                </div>
+            </div>
+        </section>
+        <section id="forms">
+            <h2 class="mb-4">Formularze</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <form id="purchase-form" class="mb-4">
+                        <h3>Zakup</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nazwa produktu">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Cena jednostkowa">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Liczba sztuk">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Zakup</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <form id="sales-form" class="mb-4">
+                        <h3>Sprzedaż</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nazwa produktu">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Cena jednostkowa">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Liczba sztuk">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sprzedaż</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <form id="balance-form" class="mb-4">
+                        <h3>Zmiana Salda</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Komentarz">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Wartość">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Zmień Saldo</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
